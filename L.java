@@ -13,7 +13,10 @@ public class L {
     // ---------------------------------------------------------------------------------------------
     // Constants
     // ---------------------------------------------------------------------------------------------
-    private static final String LOG_PREFIX = "eyemate_";
+    /**
+	 * YOU MAY ADD LOG PREFIX FOR EASIER SEARCHING IN THE LOG OUTPUT
+     */
+    private static final String LOG_PREFIX = " "; 
     private static final int LOG_PREFIX_LENGTH = LOG_PREFIX.length();
     private static final int MAX_LOG_TAG_LENGTH = 23;
 
