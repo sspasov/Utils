@@ -1,8 +1,3 @@
-package com.mentormate.eyemate.utils;
-
-/**
- * @author MentorMate
- */
 
 import android.util.Log;
 
@@ -13,7 +8,7 @@ public class L {
     // ---------------------------------------------------------------------------------------------
     // Constants
     // ---------------------------------------------------------------------------------------------
-    private static final String LOG_PREFIX = "eyemate_";
+    private static final String LOG_PREFIX = "";
     private static final int LOG_PREFIX_LENGTH = LOG_PREFIX.length();
     private static final int MAX_LOG_TAG_LENGTH = 23;
 
