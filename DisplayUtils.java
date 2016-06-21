@@ -1,4 +1,4 @@
-package com.stanimir.somesmalltests.utils;
+package com.example.mypermissionsapp;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,10 +16,15 @@ import java.text.NumberFormat;
  * Created by Stanimir Spasov from MentorMate.
  */
 public class DisplayUtils {
-
+    // ---------------------------------------------------------------------------------------------
+    // Constants
+    // ---------------------------------------------------------------------------------------------
     private static final String TAG = DisplayUtils.class.getSimpleName();
     private static final String INCH_FORMAT = "#0.0";
 
+    // ---------------------------------------------------------------------------------------------
+    // Fields
+    // ---------------------------------------------------------------------------------------------
     private static DisplayMetrics displayMetrics;
 
     private static int width;
@@ -31,6 +36,10 @@ public class DisplayUtils {
     private static float density;
     private static int densityDpi;
     private static float scaledDensity;
+
+    // ---------------------------------------------------------------------------------------------
+    // Public methods
+    // ---------------------------------------------------------------------------------------------
 
     /**
      * Method that calculate device screen inches.
@@ -120,18 +129,6 @@ public class DisplayUtils {
         return result;
     }
 
-    private static void log() {
-        Log.i(TAG, "screenWidth = " + width);
-        Log.i(TAG, "screenXdpi = " + xdpi);
-        Log.i(TAG, "screenHeight = " + height);
-        Log.i(TAG, "screenYdpi = " + ydpi);
-        Log.i(TAG, "density = " + density);
-        Log.i(TAG, "densityDpi = " + densityDpi);
-        Log.i(TAG, "scaledDensity = " + scaledDensity);
-
-        Log.i(TAG, "screenInches = " + screenInches);
-    }
-
     /**
      * Method that shows device screen size name.
      *
@@ -213,7 +210,21 @@ public class DisplayUtils {
      */
     public static boolean isDeviceTablet(Activity activity) {
         return (getScreenSizeName(activity).contains("large") ||
-            getScreenSizeName(activity).contains("xlarge")) && getScreenInches(activity) >= 7.0;
+                getScreenSizeName(activity).contains("xlarge")) && getScreenInches(activity) >= 7.0;
     }
 
+    // ---------------------------------------------------------------------------------------------
+    // Private methods
+    // ---------------------------------------------------------------------------------------------
+    private static void log() {
+        Log.i(TAG, "screenWidth = " + width);
+        Log.i(TAG, "screenXdpi = " + xdpi);
+        Log.i(TAG, "screenHeight = " + height);
+        Log.i(TAG, "screenYdpi = " + ydpi);
+        Log.i(TAG, "density = " + density);
+        Log.i(TAG, "densityDpi = " + densityDpi);
+        Log.i(TAG, "scaledDensity = " + scaledDensity);
+
+        Log.i(TAG, "screenInches = " + screenInches);
+    }
 }

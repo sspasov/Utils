@@ -1,4 +1,4 @@
-package com.stanimir.somesmalltests.utils;
+package com.example.mypermissionsapp;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,6 +8,10 @@ import java.io.InputStreamReader;
  * @author Kevin Kowalewski
  */
 public class RootUtil {
+    // ---------------------------------------------------------------------------------------------
+    // Public methods
+    // ---------------------------------------------------------------------------------------------
+
     /**
      * Method that check root access of the device.
      *
@@ -17,6 +21,9 @@ public class RootUtil {
         return checkFromBuildInfo() || checkForSuperUserApk() || canExecuteCommand();
     }
 
+    // ---------------------------------------------------------------------------------------------
+    // Private methods
+    // ---------------------------------------------------------------------------------------------
     private static boolean checkFromBuildInfo() {
         String buildTags = android.os.Build.TAGS;
         return buildTags != null && buildTags.contains("test-keys");

@@ -1,4 +1,4 @@
-package com.mentormate.eyemate.utils;
+package com.example.mypermissionsapp;
 
 /**
  * @author MentorMate
@@ -13,7 +13,7 @@ public class L {
     // ---------------------------------------------------------------------------------------------
     // Constants
     // ---------------------------------------------------------------------------------------------
-    private static final String LOG_PREFIX = "eyemate_";
+    private static final String LOG_PREFIX = "app_name_";
     private static final int LOG_PREFIX_LENGTH = LOG_PREFIX.length();
     private static final int MAX_LOG_TAG_LENGTH = 23;
 
@@ -39,6 +39,7 @@ public class L {
      * Send a DEBUG log message.
      *
      * @param msg The message you would like logged.
+     * @see android.util.Log#d(String, String)
      */
     public static void d(String msg) {
         getMethodNames(new Throwable().getStackTrace());
@@ -50,6 +51,7 @@ public class L {
      *
      * @param msg The message you would like logged.
      * @param tr  An exception to log
+     * @see android.util.Log#d(String, String, Throwable)
      */
     public static void d(String msg, Throwable tr) {
         getMethodNames(new Throwable().getStackTrace());
