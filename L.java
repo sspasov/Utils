@@ -1,8 +1,3 @@
-package com.example.mypermissionsapp;
-
-/**
- * @author MentorMate
- */
 
 import android.util.Log;
 

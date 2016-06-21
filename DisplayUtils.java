@@ -1,4 +1,3 @@
-package com.example.mypermissionsapp;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,7 +12,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 /**
- * Created by Stanimir Spasov from MentorMate.
+ * Created by @Stanimir Spasov.
  */
 public class DisplayUtils {
     // ---------------------------------------------------------------------------------------------
